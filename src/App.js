@@ -17,20 +17,16 @@ function App() {
     const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
     return (
-        <LocalisationProvider>
-            <ThemeProvider theme={themeMode}>
-                <>
-                <GlobalStyles/>
-                <>
-                    <LocalisationToggle></LocalisationToggle>
-                    <ThemeToggle theme={theme} toggleTheme={themeToggler} />
-                </>
-                    <Avatar image={ avatarImage } previewImage={ previewImage } />
-                    <Summary/>
-                    <Social/>
-                </>
-            </ThemeProvider>
-        </LocalisationProvider>
+      <LocalisationProvider>
+        <ThemeProvider theme={themeMode}>
+          <GlobalStyles/>
+          <LocalisationToggle></LocalisationToggle>
+          <ThemeToggle theme={theme} toggleTheme={themeToggler} />
+          <Avatar image={ avatarImage } previewImage={ previewImage } />
+          <Summary/>
+          <Social/>
+        </ThemeProvider>
+      </LocalisationProvider>
   )
 }
 
