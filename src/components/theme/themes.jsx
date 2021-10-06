@@ -4,6 +4,7 @@ export const lightTheme = {
     title: '#ff4757',
     subtitle: '#ff4757',
     icons: '#ff4757',
+    iconHover: '#fa848f',
     toggle: '#2f3542'
 }
 
@@ -13,5 +14,6 @@ export const darkTheme = {
     title: '#2ed573',
     subtitle: '#2ed573',
     icons: '#2ed573',
+    iconHover: '#6bd697',
     toggle: '#f0f0f0'
 }

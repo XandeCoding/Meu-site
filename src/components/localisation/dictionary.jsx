@@ -2,7 +2,7 @@ const Dictionary = {
     PT: {
         student: 'Engenharia de Software - UFG',
         veggie: 'Vegetariano',
-        work: 'Python | Node.js | React | Angular',
+        work: 'Python | Node.js | React | Angular | Kubernetes',
         summaryTitle: 'Sobre mim',
         summaryTextPt1: `Um apaixonado em usar tecnologia em algo que mude e facilite a vida das pessoas, 
                         interessado em UI/UX, desenvolvimento web e escrevo algumas coisas também.`,
@@ -14,7 +14,7 @@ const Dictionary = {
     EN: {
         student: 'Sofware Engineering - UFG',
         veggie: 'Veggie',
-        work: 'Python | Node.js | React | Angular',
+        work: 'Python | Node.js | React | Angular | Kubernetes',
         summaryTitle: 'About me',
         summaryTextPt1: `Passionate about using technology in something that changes and makes people's lives easier,
         interested in UI / UX, web development and I write some things too.`,

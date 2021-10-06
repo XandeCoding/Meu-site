@@ -23,6 +23,10 @@ export const GlobalStyles = createGlobalStyle `
 
     .icon {
         color: ${({ theme }) => theme.icons };
+
+        &:hover {
+            color: ${({ theme }) => theme.iconHover };
+        }
     }
 
     .text {
