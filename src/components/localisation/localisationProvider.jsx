@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react'
-import dictionary from './dictionary'
+import Dictionary from './dictionary'
 
 import {
     availableLanguages,
@@ -14,7 +14,7 @@ export function LocalisationProvider({ children }) {
 
     return (
         <LocalisationContext.Provider
-            value={{ localisationStore, dictionary, availableLanguages }}>
+            value={{ localisationStore, Dictionary, availableLanguages }}>
                 { children }
             </LocalisationContext.Provider>
     )

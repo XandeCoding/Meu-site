@@ -1,4 +1,4 @@
-export default {
+const Dictionary = {
     PT: {
         student: 'Engenharia de Software - UFG',
         veggie: 'Vegetariano',
@@ -24,3 +24,5 @@ export default {
         flag: '🇺🇸'
     }    
 }
+
+export default Dictionary;

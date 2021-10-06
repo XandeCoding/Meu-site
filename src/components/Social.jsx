@@ -1,10 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import loadable from '@loadable/component'
 import { Github } from '@styled-icons/entypo-social'
 import { Gitlab, Codepen, Twitch } from '@styled-icons/fa-brands'
 import { DevTo, LinkedinSquare, InstagramAlt, Dribbble } from '@styled-icons/boxicons-logos'
-const Translate = loadable(() => import ('./localisation/Translate'))
+import Translate from './localisation/Translate'
 
 const Wrapper = styled.div `
     display: flex;

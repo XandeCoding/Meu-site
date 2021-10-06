@@ -3,11 +3,11 @@ import { LocalisationContext } from './localisationProvider'
 
 const Translator = ({ token }) => {
     const {
-        localisationStore: [state], dictionary
+        localisationStore: [state], Dictionary
     } = useContext(LocalisationContext)
 
     const { selectedLanguage } = state
-    const translatedToken = dictionary[selectedLanguage][token]
+    const translatedToken = Dictionary[selectedLanguage][token]
     
     return <Fragment>{ translatedToken }</Fragment>
 }

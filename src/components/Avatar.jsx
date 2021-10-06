@@ -1,9 +1,8 @@
 import React from 'react'
-import loadable from '@loadable/component'
 import styled from 'styled-components'
 import ReactTypingEffect from 'react-typing-effect'
 import ProgressiveImage from "react-progressive-image-loading"
-const Translate = loadable(() => import ('./localisation/Translate'))
+import Translate from './localisation/Translate'
 
 const Avatar = ({ image, previewImage}) => {
     const Wrapper = styled.section `

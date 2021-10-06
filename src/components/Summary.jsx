@@ -1,7 +1,6 @@
 import React from 'react'
-import loadable from '@loadable/component'
 import styled from 'styled-components'
-const Translate = loadable(() => import ('./localisation/Translate'))
+import Translate from './localisation/Translate'
 
 const Summary = () => {
     const Wrapper = styled.div`

@@ -1,8 +1,7 @@
 import React, { useContext, useEffect } from 'react'
-import loadable from '@loadable/component'
 import styled from  'styled-components'
 import { LocalisationContext } from './localisationProvider'
-const Translate = loadable(() => import ('./Translate'))
+import Translate from './Translate'
 
 const LocalisationToggle= () => {
 

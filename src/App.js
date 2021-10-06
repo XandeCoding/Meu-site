@@ -1,5 +1,3 @@
-import React from 'react'
-import loadable from '@loadable/component'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from './components/theme/GlobalStyle'
 import { lightTheme, darkTheme } from './components/theme/themes'
@@ -8,17 +6,16 @@ import { LocalisationProvider } from './components/localisation/localisationProv
 import avatarImage from './assets/avatar.png'
 import previewImage from './assets/avatar-placeholder.jpg'
 
-const LocalisationToggle = loadable(() => import ('./components/localisation/LocalisationToggle'))
-const Avatar = loadable(() => import('./components/Avatar'))
-const Summary = loadable(() => import('./components/Summary'))
-const Social = loadable(() => import('./components/Social'))
-const ThemeToggle = loadable(() => import('./components/theme/ThemeToggler'))
+import LocalisationToggle from './components/localisation/LocalisationToggle'
+import Avatar from './components/Avatar'
+import Social from './components/Social'
+import Summary from './components/Summary'
+import ThemeToggle from './components/theme/ThemeToggle'
 
 function App() {
-    const [ theme, themeToggler, mountedComponent ] = useDarkMode();
+    const [ theme, themeToggler ] = useDarkMode();
     const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
-    if (!mountedComponent) return <div/>
     return (
         <LocalisationProvider>
             <ThemeProvider theme={themeMode}>
