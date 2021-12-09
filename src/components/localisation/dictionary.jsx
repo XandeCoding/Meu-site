@@ -4,10 +4,9 @@ const Dictionary = {
         veggie: 'Vegetariano',
         work: 'Python | Node.js | React | Angular | Kubernetes',
         summaryTitle: 'Sobre mim',
-        summaryTextPt1: `Um apaixonado em usar tecnologia em algo que mude e facilite a vida das pessoas, 
-                        interessado em UI/UX, desenvolvimento web e escrevo algumas coisas também.`,
-        summaryTextPt2: `Atualmente sou desenvolvedor na StayApp e tenho experiência com algumas ferramentas
-        e tecnologias como Python, Angular, ElasticSearch, Firebase e bancos de dados NoSql`,
+        summaryTextPt1: `Tenho mais de 2 anos de experiência com Python, JavaScript e TypeScript utilizando frameworks como Flask, FastAPI, Express, Angular e React.        `,
+        summaryTextPt2: `Trabalho bastante com a suíte de aplicativos da Firebase como o Realtime, Firestore Database e soluções serveless como Cloud Functions. Experiência em desenvolvimento e deploy de aplicações em nuvem usando Docker e Kubernetes (Amazon EKS).`,
+        summaryTextPt3: `Tenho estudado Elixir no meu tempo livre e construído algumas aplicações de estudo como api’s usando o Phoenix que acho uma plataforma incrível, e em Go principalmente estudando concorrência e assincronismo.`,
         socialNetworks: 'Me segue lá 🤘',
         flag: '🇧🇷'
     },
@@ -20,6 +19,7 @@ const Dictionary = {
         interested in UI / UX, web development and I write some things too.`,
         summaryTextPt2: `I am currently a developer at StayApp and have experience with some tools
         and technologies like Python, Angular, ElasticSearch, Firebase and NoSql databases`,
+        summaryTextPt3: ``,
         socialNetworks: 'Follow Me 🤘',
         flag: '🇺🇸'
     }    

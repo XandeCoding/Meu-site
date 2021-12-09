@@ -35,7 +35,9 @@ const Summary = () => {
             </Text>
             <Text>
                 <Translate token="summaryTextPt2" />
-                <span role="img" aria-label="Vulcan Salute"> 🖖</span>
+            </Text>
+            <Text>
+                <Translate token="summaryTextPt3" />
             </Text>
         </Wrapper>
     )
