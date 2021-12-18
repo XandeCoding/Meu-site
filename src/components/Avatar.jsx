@@ -15,17 +15,13 @@ const Avatar = ({ image, previewImage}) => {
     p {
       margin: 0.1rem 1rem;
       font-size: 1.2rem;
-      line-height: 1rem;
-
-      &.smaller {
-        font-size: 0.95rem;
-        
-        @media (max-width: 700px) {
-            font-size: 0.8rem;
-        }
-      }
+      line-height: 1rem;        
     }
-    `
+
+    span {
+      margin-left: 0.4rem;
+    }
+  `
 
     const ImageWrapper = styled.div `
       width: 100%;
@@ -45,35 +41,49 @@ const Avatar = ({ image, previewImage}) => {
       font-size: 1.65rem;
     `
 
-    const Work = styled.div `
-      margin-bottom: 0.5rem;  
+    const Subtitle = styled.div `
+      h3 {
+        font-size: 1.25rem;
+        margin-block: 0rem;
+      }
+    `
+
+    const Infos = styled.div `
+      margin-top: 1.25rem;
 
       p {
-        line-height: 1.75rem; 
+        font-size: 1.05rem;
+        line-height: 1.2rem;
       }
     `
 
     return (
         <Wrapper>
-          <div>
-          <ImageWrapper>
-            <ProgressiveImage
-              preview={ previewImage }
-              src={ image }
-              render={(src, style) => <img src={src} style={style} alt="Alexandre" />}
-            />
-          </ImageWrapper>
+            <ImageWrapper>
+              <ProgressiveImage
+                delay={1500}
+                preview={ previewImage }
+                src={ image }
+                render={(src, style) => <img src={src} style={style} alt="Alexandre" />}
+              />
+            </ImageWrapper>
             <div>
               <Name className="title"><ReactTypingEffect text='Alexandre Fernandes' typingDelay='800' speed='150' eraseDelay='8000'></ReactTypingEffect></Name>
-              <Work className="subtitle">
-                  <p>
-                    <Translate token="work"/>
-                  </p>
-              </Work>
-              <p className="smaller"><Translate token="student" /> <span role="img" aria-label="university">🏫</span></p>
-              <p className="smaller">xandecode@gmail.com <span role="img" aria-label="email">📬</span></p>
+              <Subtitle className="subtitle">
+                  <h3>
+                    <Translate token="tecnologies"/>
+                  </h3>
+              </Subtitle>
+              <Subtitle className="subtitle">
+                <h3>
+                  <Translate token="work" /><span role="img" aria-label="work tech">👨‍💻</span> 
+                </h3>
+              </Subtitle>
+              <Infos>
+                <p><Translate token="student" /> <span role="img" aria-label="university">🏫</span></p>
+                <p>xandecode@gmail.com <span role="img" aria-label="email">📬</span></p>
+              </Infos>
             </div>
-          </div>
         </Wrapper>
     )
 }

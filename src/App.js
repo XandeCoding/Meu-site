@@ -3,7 +3,7 @@ import { GlobalStyles } from './components/theme/GlobalStyle'
 import { lightTheme, darkTheme } from './components/theme/themes'
 import { useDarkMode } from './components/theme/useDarkMode'
 import { LocalisationProvider } from './components/localisation/localisationProvider'
-import avatarImage from './assets/avatar.png'
+import avatarImage from './assets/avatar.jpg'
 import previewImage from './assets/avatar-placeholder.jpg'
 
 import LocalisationToggle from './components/localisation/LocalisationToggle'
