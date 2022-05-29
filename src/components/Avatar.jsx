@@ -4,7 +4,7 @@ import ReactTypingEffect from 'react-typing-effect'
 import ProgressiveImage from "react-progressive-image-loading"
 import Translate from './localisation/Translate'
 
-const Avatar = ({ image, previewImage}) => {
+const Avatar = ({ image, previewImage }) => {
     const Wrapper = styled.section `
     display: flex;
     flex-direction: column;
@@ -61,14 +61,21 @@ const Avatar = ({ image, previewImage}) => {
         <Wrapper>
             <ImageWrapper>
               <ProgressiveImage
-                delay={1500}
+                delay={ 1500 }
                 preview={ previewImage }
                 src={ image }
-                render={(src, style) => <img src={src} style={style} alt="Alexandre" />}
+                render={ (src, style) => <img src={src} style={style} alt="Alexandre" /> }
               />
             </ImageWrapper>
             <div>
-              <Name className="title"><ReactTypingEffect text='Alexandre Fernandes' typingDelay='800' speed='150' eraseDelay='8000'></ReactTypingEffect></Name>
+              <Name className="title">
+                <ReactTypingEffect 
+                  text='Alexandre Fernandes' 
+                  typingDelay='800'
+                  speed='150'
+                  eraseDelay='8000'>
+                </ReactTypingEffect>
+              </Name>
               <Subtitle className="subtitle">
                   <h3>
                     <Translate token="tecnologies"/>
@@ -89,3 +96,4 @@ const Avatar = ({ image, previewImage}) => {
 }
 
 export default React.memo(Avatar)
+

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Github, DevTo, LinkedinSquare } from '@styled-icons/boxicons-logos'
+import { Github, DevTo, LinkedinSquare, Codepen } from '@styled-icons/boxicons-logos'
 import Translate from './localisation/Translate'
 
 const Wrapper = styled.div `
@@ -56,6 +56,10 @@ const Social = () => {
                 <LinkedinSquare className="icon" size="32" />
                 <NameSocial className="text">Linkedin</NameSocial>
             </LinkSocial>
+                <LinkSocial href="https://codepen.io/XandeCoding/pens/showcase">
+                <Codepen className="icon" size="32" />
+                <NameSocial className="text">Codepen</NameSocial>
+            </LinkSocial> 
         </Wrapper>
     )
 }
