@@ -1,76 +1,92 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import ReactTypingEffect from 'react-typing-effect'
-import ProgressiveImage from "react-progressive-image-loading"
 import Translate from './localisation/Translate'
 
-const Avatar = ({ image, previewImage }) => {
-    const Wrapper = styled.section `
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+const Wrapper = styled.section `
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    p {
-      margin: 0.1rem 1rem;
-      font-size: 1.2rem;
-      line-height: 1rem;        
-    }
+  p {
+    margin: 0.1rem 1rem;
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
 
-    span {
-      margin-left: 0.4rem;
-    }
-  `
+  span {
+    margin-left: 0.4rem;
+  }
+`
 
-    const ImageWrapper = styled.div `
-      width: 100%;
+const ImageWrapper = styled.div `
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
-      img {
-        width: 12.5rem;
-        position: relative;
-        margin: 2.3rem 0 1rem 0;
-        border-radius: 50%;
-        box-shadow: inset 2px 1px 4px rgba(0, 0, 0, 0.1);
-      }
-    `
+  img, div {
+    image-rendering: auto;
+    /* image-rendering: crisp-edges; */
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
 
-    const Name = styled.h1 `
-      padding: 0;
-      margin: 0 0 2rem 0;
-      font-size: 1.65rem;
-    `
+    object-fit: cover;
+    width: 12.5rem;
+    height: 12.5rem;
+    position: relative;
+    margin: 2.3rem 0 1rem 0;
+    border-radius: 50%;
+    box-shadow: inset 2px 1px 4px rgba(0, 0, 0, 0.1);
+  }
+`
 
-    const Subtitle = styled.div `
-      h3 {
-        font-size: 1.25rem;
-        margin-block: 0rem;
-      }
-    `
+const ImageFallback = styled.div `
+  background-color: lightgray;
+`
 
-    const Infos = styled.div `
-      margin-top: 1.25rem;
+const Name = styled.h1 `
+  padding: 0;
+  margin: 0 0 2rem 0;
+  font-size: 1.65rem;
+`
 
-      p {
-        font-size: 1.05rem;
-        line-height: 1.2rem;
-      }
-    `
+const Subtitle = styled.div `
+  h3 {
+    font-size: 1.25rem;
+    margin-block: 0rem;
+  }
+`
+
+const Infos = styled.div `
+  margin-top: 0.8rem;
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.2rem;
+  }
+`
+
+const Avatar = ({ imageName }) => {
+    const [image, setImage] = useState(null)
+    import(`../assets/${ imageName }`).then((result) => setImage(result.default))
 
     return (
         <Wrapper>
             <ImageWrapper>
-              <ProgressiveImage
-                delay={ 1500 }
-                preview={ previewImage }
-                src={ image }
-                render={ (src, style) => <img src={src} style={style} alt="Alexandre" /> }
-              />
+              { image
+                ? <img
+                  src={ image }
+                  alt='foto'
+                />
+                : <ImageFallback />
+              }
             </ImageWrapper>
             <div>
               <Name className="title">
-                <ReactTypingEffect 
-                  text='Alexandre Fernandes' 
+                <ReactTypingEffect
+                  text='Alexandre Fernandes'
                   typingDelay='800'
                   speed='150'
                   eraseDelay='8000'>
@@ -96,4 +112,3 @@ const Avatar = ({ image, previewImage }) => {
 }
 
 export default React.memo(Avatar)
-

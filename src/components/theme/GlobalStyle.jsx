@@ -14,6 +14,10 @@ export const GlobalStyles = createGlobalStyle `
 
     .title {
         color: ${({ theme }) => theme.title };
+
+        &:hover {
+            opacity: 0.80;
+        }
     }
 
     .subtitle {
@@ -23,10 +27,6 @@ export const GlobalStyles = createGlobalStyle `
 
     .icon {
         color: ${({ theme }) => theme.icons };
-
-        &:hover {
-            color: ${({ theme }) => theme.iconHover };
-        }
     }
 
     .text {

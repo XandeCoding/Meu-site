@@ -32,6 +32,10 @@ const LinkSocial = styled.a `
     padding: 0.2em;
     width: 7rem;
     text-align: left;
+
+    &:hover {
+        opacity: 0.60;
+    }
 `
 
 const NameSocial = styled.span `

@@ -18,18 +18,5 @@ As principais features são os esquemas de trocas de linguagem e de temas além 
 ## Como usar
 Para facilitar o uso é possível além de usar o comum `npm start` pode ser usado docker da seguinte forma:
 
-### Em modo de desenvolvimento
-
-**docker-compose up --build**
-
-## Deploy
-Há também um arquivo docker configurado para modo de produção, indico usar a hospedagem da [Vercel](https://vercel.com/) por ser free (há planos pagos também com suas vantagens) já vem com certificado SSL e é super simples de instalar o projeto, que é inclusive onde hospedei meu cartão de visitas.
-
-### Docker para produção
-
-**export VISIT_CARD_PORT=9090** *- É necessário exportar uma variável de ambiente* <br>
-**docker-compose -f docker-compose-prod.yml up**
-
-
-## Análise feita usando LightHouse do Google
+# Análise feita usando LightHouse do Google
 ![Lighthouse](/preview.png)
