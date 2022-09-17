@@ -7,7 +7,7 @@
 
 Este projeto é um cartão de visitas que fiz em que as principais características dele é ser rápido, leve, extensível e que pudesse ser usado por qualquer pessoa que tenha um conhecimento basico de Javascript e HTML mesmo que não tenha experiência com React.<br>
 
-## Demo 
+## Demonstração
 
 __[Meu cartão de Visitas](https://xande.dev.br/)__
 
@@ -15,8 +15,9 @@ __[Meu cartão de Visitas](https://xande.dev.br/)__
 
 As principais features são os esquemas de trocas de linguagem e de temas além disso é usado React como lib principal o que possibilitou ser bem rápido e eficiente, Styled Components para deixar que cada componente trabalhe bem sozinho devido as configurações de estilo ficarem no mesmo arquivo (de forma organizada) e Styled Icons para fornecer ícones de várias fontes diferentes como FontAwesome, Entypo e Boxicons.
 
-## Como usar
-Para facilitar o uso é possível além de usar o comum `npm start` pode ser usado docker da seguinte forma:
+## Preview
 
-# Análise feita usando LightHouse do Google
-![Lighthouse](/preview.png)
+![Preview](/preview.png)
+## Check de perfomance
+
+![Check de perfomance](/check.png)
