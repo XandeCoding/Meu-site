@@ -27,15 +27,11 @@ const ImageWrapper = styled.div `
   justify-content: center;
 
   img, div {
-    image-rendering: auto;
-    /* image-rendering: crisp-edges; */
-    image-rendering: pixelated;
-    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 
     object-fit: cover;
     width: 12.5rem;
     height: 12.5rem;
-    position: relative;
     margin: 2.3rem 0 1rem 0;
     border-radius: 50%;
     box-shadow: inset 2px 1px 4px rgba(0, 0, 0, 0.1);
@@ -79,6 +75,8 @@ const Avatar = ({ imageName }) => {
                 ? <img
                   src={ image }
                   alt='foto'
+                  height='12.5rem'
+                  width='12.5rem'
                 />
                 : <ImageFallback />
               }

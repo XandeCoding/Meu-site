@@ -20,7 +20,7 @@ function App() {
           <GlobalStyles/>
           <LocalisationToggle></LocalisationToggle>
           <ThemeToggle theme={theme} toggleTheme={themeToggler} />
-          <Avatar imageName={ 'avatar.jpg' } />
+          <Avatar imageName={ 'avatar.png' } />
           <Summary/>
           <Social/>
         </ThemeProvider>
