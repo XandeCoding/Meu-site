@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Github, DevTo, LinkedinSquare, Codepen } from '@styled-icons/boxicons-logos'
+import { Github, DevTo, MediumSquare, LinkedinSquare, Codepen } from '@styled-icons/boxicons-logos'
 import Translate from './localisation/Translate'
 
 const Wrapper = styled.div `
@@ -40,7 +40,7 @@ const LinkSocial = styled.a `
 
 const NameSocial = styled.span `
     margin-right: auto;
-    margin-left: 0.85rem;
+    margin-left: 0.45rem;
     display: block;
 `
 
@@ -56,6 +56,11 @@ const Social = () => {
                 <DevTo className="icon" size="32" />
                 <NameSocial className="text">Dev.to</NameSocial>
             </LinkSocial>
+            <LinkSocial href="https://medium.com/@XandeCodes">
+                <MediumSquare className="icon" size="32" />
+                <NameSocial className="text">Medium</NameSocial>
+            </LinkSocial>
+
             <LinkSocial href="https://www.linkedin.com/in/xandecodes/">
                 <LinkedinSquare className="icon" size="32" />
                 <NameSocial className="text">Linkedin</NameSocial>
