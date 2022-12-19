@@ -14,15 +14,15 @@ export const GlobalStyles = createGlobalStyle `
 
     .title {
         color: ${({ theme }) => theme.title };
-
-        &:hover {
-            opacity: 0.80;
-        }
     }
 
     .subtitle {
         color: ${({ theme }) => theme.subtitle};
         font-weight: bold;
+    }
+
+    .title:hover, .subtitle:hover {
+        opacity: 0.80;
     }
 
     .icon {
