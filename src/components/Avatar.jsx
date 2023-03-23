@@ -27,7 +27,7 @@ const ImageWrapper = styled.div `
   justify-content: center;
 
   img, div {
-    image-rendering: crisp-edges;
+    image-rendering: high-quality;
 
     object-fit: cover;
     width: 12.5rem;
@@ -74,9 +74,10 @@ const Avatar = ({ imageName }) => {
               { image
                 ? <img
                   src={ image }
-                  alt='foto'
+                  alt='foto de perfil'
                   height='12.5rem'
                   width='12.5rem'
+                  loading='lazy'
                 />
                 : <ImageFallback />
               }

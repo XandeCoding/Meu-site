@@ -3,7 +3,6 @@ import { GlobalStyles } from './components/theme/GlobalStyle'
 import { lightTheme, darkTheme } from './components/theme/themes'
 import { useDarkMode } from './components/theme/useDarkMode'
 import { LocalisationProvider } from './components/localisation/localisationProvider'
-import avatarImage from './assets/avatar.webp'
 
 import LocalisationToggle from './components/localisation/LocalisationToggle'
 import Avatar from './components/Avatar'
@@ -21,7 +20,7 @@ function App() {
           <GlobalStyles/>
           <LocalisationToggle></LocalisationToggle>
           <ThemeToggle theme={theme} toggleTheme={themeToggler} />
-          <Avatar image={ avatarImage } />
+          <Avatar imageName='avatar.webp' />
           <Summary/>
           <Social/>
         </ThemeProvider>
