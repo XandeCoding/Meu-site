@@ -3,8 +3,7 @@ import { GlobalStyles } from './components/theme/GlobalStyle'
 import { lightTheme, darkTheme } from './components/theme/themes'
 import { useDarkMode } from './components/theme/useDarkMode'
 import { LocalisationProvider } from './components/localisation/localisationProvider'
-import avatarImage from './assets/avatar.png'
-import previewImage from './assets/avatar-placeholder.jpg'
+import avatarImage from './assets/avatar.webp'
 
 import LocalisationToggle from './components/localisation/LocalisationToggle'
 import Avatar from './components/Avatar'
@@ -17,20 +16,16 @@ function App() {
     const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
     return (
-        <LocalisationProvider>
-            <ThemeProvider theme={themeMode}>
-                <>
-                <GlobalStyles/>
-                <>
-                    <LocalisationToggle></LocalisationToggle>
-                    <ThemeToggle theme={theme} toggleTheme={themeToggler} />
-                </>
-                    <Avatar image={ avatarImage } previewImage={ previewImage } />
-                    <Summary/>
-                    <Social/>
-                </>
-            </ThemeProvider>
-        </LocalisationProvider>
+      <LocalisationProvider>
+        <ThemeProvider theme={themeMode}>
+          <GlobalStyles/>
+          <LocalisationToggle></LocalisationToggle>
+          <ThemeToggle theme={theme} toggleTheme={themeToggler} />
+          <Avatar image={ avatarImage } />
+          <Summary/>
+          <Social/>
+        </ThemeProvider>
+      </LocalisationProvider>
   )
 }
 
