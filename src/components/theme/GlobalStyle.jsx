@@ -21,6 +21,10 @@ export const GlobalStyles = createGlobalStyle `
         font-weight: bold;
     }
 
+    .title:hover, .subtitle:hover {
+        opacity: 0.80;
+    }
+
     .icon {
         color: ${({ theme }) => theme.icons };
 

@@ -7,7 +7,7 @@
 
 Este projeto é um cartão de visitas que fiz em que as principais características dele é ser rápido, leve, extensível e que pudesse ser usado por qualquer pessoa que tenha um conhecimento basico de Javascript e HTML mesmo que não tenha experiência com React.<br>
 
-## Demo 
+## Demonstração
 
 __[Meu cartão de Visitas](https://xande.dev.br/)__
 
@@ -15,21 +15,9 @@ __[Meu cartão de Visitas](https://xande.dev.br/)__
 
 As principais features são os esquemas de trocas de linguagem e de temas além disso é usado React como lib principal o que possibilitou ser bem rápido e eficiente, Styled Components para deixar que cada componente trabalhe bem sozinho devido as configurações de estilo ficarem no mesmo arquivo (de forma organizada) e Styled Icons para fornecer ícones de várias fontes diferentes como FontAwesome, Entypo e Boxicons.
 
-## Como usar
-Para facilitar o uso é possível além de usar o comum `npm start` pode ser usado docker da seguinte forma:
+## Preview
 
-### Em modo de desenvolvimento
+![Preview](/preview.png)
+## Check de perfomance
 
-**docker-compose up --build**
-
-## Deploy
-Há também um arquivo docker configurado para modo de produção, indico usar a hospedagem da [Vercel](https://vercel.com/) por ser free (há planos pagos também com suas vantagens) já vem com certificado SSL e é super simples de instalar o projeto, que é inclusive onde hospedei meu cartão de visitas.
-
-### Docker para produção
-
-**export VISIT_CARD_PORT=9090** *- É necessário exportar uma variável de ambiente* <br>
-**docker-compose -f docker-compose-prod.yml up**
-
-
-## Análise feita usando LightHouse do Google
-![Lighthouse](/preview.png)
+![Check de perfomance](/check.png)

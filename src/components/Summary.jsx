@@ -13,7 +13,7 @@ const Summary = () => {
     const Title = styled.h2`
         text-align: center;
         font-weight: 600;
-        font-size: 1.35em;
+        font-size: 1.4em;
 
     `
     const Text = styled.p`
@@ -23,7 +23,11 @@ const Summary = () => {
         margin: 1em 2.5em;
 
         @media (max-width: 700px) {
-            font-size: 0.9rem;
+            font-size: 1rem;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
         }
     `
 
@@ -35,7 +39,9 @@ const Summary = () => {
             </Text>
             <Text>
                 <Translate token="summaryTextPt2" />
-                <span role="img" aria-label="Vulcan Salute"> 🖖</span>
+            </Text>
+            <Text>
+                <Translate token="summaryTextPt3" />
             </Text>
         </Wrapper>
     )

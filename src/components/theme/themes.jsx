@@ -1,19 +1,18 @@
 export const lightTheme = {
-    background: '#f0f0f0',
+    background: '#efecec',
     text: '#364f6b',
-    title: '#ff4757',
-    subtitle: '#ff4757',
-    icons: '#ff4757',
-    iconHover: '#fa848f',
+    title: '#427a5b',
+    subtitle: '#427a5b',
+    icons: '#427a5b',
     toggle: '#2f3542'
 }
 
 export const darkTheme = {
     background: '#2f3542',
     text: '#ffffff',
-    title: '#2ed573',
-    subtitle: '#2ed573',
-    icons: '#2ed573',
-    iconHover: '#6bd697',
-    toggle: '#f0f0f0'
+    title: '#22d1ee',
+    subtitle: '#22d1ee',
+    icons: '#22d1ee',
+    toggle: '#efecec'
 }
+
