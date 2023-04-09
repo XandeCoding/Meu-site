@@ -40,6 +40,7 @@ const ImageWrapper = styled.div `
 
 const ImageFallback = styled.div `
   background-color: lightgray;
+  filter: blur(2px);
 `
 
 const Name = styled.h1 `
