@@ -5,9 +5,10 @@ const Dictionary = {
         work: 'Desenvolvedor - LuizaLabs',
         tecnologies: 'Python | Node.js | Angular | React',
         summaryTitle: 'Sobre mim',
-        summaryTextPt1: `Tenho cerca de 3 anos de experiência trabalhando em produtos para facilitar e descomplicar a vida dos usuários.`,
-        summaryTextPt2: `Procuro sempre nos projetos que atuo participar tanto na modelagem da solução, quanto no Frontend, Backend e na sua Infraestrutura utilizando linguagens como Python, TypeScript e mais recentemente Go.`,
-        summaryTextPt3: `Algumas ferramentas que tenho utilizado com bastante frequência são Express, FastAPI, React e Angular.`,
+        summaryTextPt1: 'Sempre busco me envolver em projetos impactantes que facilitam a vida dos usuários. Ao longo da minha carreira, trabalhei tanto no frontend quanto no backend. Também contribuí ativamente na criação da infraestrutura necessária para esses projetos.',
+        summaryTextPt2: 'No backend, tenho experiência em linguagens como Python, com foco nas frameworks FastAPI e Flask. Criei APIs robustas e eficientes, garantindo um ótimo desempenho e escalabilidade dos sistemas.',
+        summaryTextPt3: 'Recentemente, tenho explorado o potencial do GoLang, uma excelente linguagem para desenvolvimento de backend.',
+        summaryTextPt4: 'No frontend, adquiri habilidades com TypeScript e trabalhei com frameworks populares como Angular e React.',
         socialNetworks: 'Redes Sociais 🤘',
         flag: '🇧🇷'
     },
@@ -17,9 +18,10 @@ const Dictionary = {
         work: 'Developer at LuizaLabs',
         tecnologies: 'Python | Node.js | Angular | React',
         summaryTitle: 'About me',
-        summaryTextPt1: `I have about 3 years of experience working on products to make life easier and uncomplicated for users.`,
-        summaryTextPt2: `I always try to participate in the projects that I work on, both in the modeling of the solution, as well as in the Frontend, Backend and its Infrastructure using languages such as Python, TypeScript and more recently Go.`,
-        summaryTextPt3: 'Some tools I have been using quite often are Express, FastAPI, React and Angular.',
+        summaryTextPt1: 'I always seek to get involved in impactful projects that make users\' lives easier. Throughout my career, I have worked on both the frontend and backend. I have also actively contributed to the creation of the necessary infrastructure for these projects.',
+        summaryTextPt2:  'In the backend, I have experience in languages such as Python, with a focus on frameworks like FastAPI and Flask. I have created robust and efficient APIs, ensuring excellent performance and scalability of the systems.',
+        summaryTextPt3: 'Recently, I have been exploring the potential of GoLang, an excellent language for backend development.',
+        summaryTextPt4: 'On the frontend, I have acquired skills in TypeScript and worked with popular frameworks like Angular and React.',
         socialNetworks: 'Social Networks🤘',
         flag: '🇺🇸'
     }    

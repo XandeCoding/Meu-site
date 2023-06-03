@@ -20,7 +20,7 @@ const Summary = () => {
         display: block;
         text-align: center;
         max-width: 50rem;
-        margin: 1em 2.5em;
+        margin: 0.85em 2.5em;
 
         @media (max-width: 700px) {
             font-size: 1rem;
@@ -43,6 +43,10 @@ const Summary = () => {
             <Text>
                 <Translate token="summaryTextPt3" />
             </Text>
+            <Text>
+                <Translate token="summaryTextPt4" />
+            </Text>
+ 
         </Wrapper>
     )
 }
